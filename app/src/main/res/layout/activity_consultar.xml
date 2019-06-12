@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonVoltarCadstro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="consutar registros"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:hint="PETSHOP BOY'S  AND A GIRL"
+        android:textColorHint="@android:color/holo_blue_dark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:hint="Busque por seu registro!"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/opc"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center|left"
+            android:onClick="checar">
+
+            <RadioButton
+                android:id="@+id/opUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_alignStart="@+id/opc"
+                android:layout_alignTop="@+id/radiogroup"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="checar"
+                android:text="usuario" />
+
+            <RadioButton
+                android:id="@+id/opId"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_below="@+id/opc"
+                android:layout_alignTop="@+id/opc"
+                android:layout_alignBottom="@+id/opc"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:onClick="checar"
+                android:text="id" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/grupoEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Selecione uma das opcoes acima !"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/editTextEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="digite aqui"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="pesquisar"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/ListViewCliente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:cacheColorHint="@color/colorAccent"
+        tools:visibility="visible" />
+
+</LinearLayout>
+
